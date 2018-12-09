@@ -1,0 +1,131 @@
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 100%; /* Should be removed. Only for demonstration */
+}
+
+.row
+{
+    height: 100vh;
+}
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1#TotalQuestions{
+	text-transform:none;
+	color:#3498db;
+	text-align:center;
+	font-style:normal;
+	font-family:'Oxygen', sans-serif !important;
+	text-decoration:none;
+}
+
+hr#TotalQDivider{
+	border-style:solid;
+	border-color:#3498db;
+	border-width:1px !important;
+	width:120px;
+}
+
+img#QuestionImage{
+	width:auto;
+	height:183px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    display: block;
+}
+
+h2#Question{
+	text-align:center;
+	font-family:'Oxygen', sans-serif !important;
+	font-weight:600;
+}
+
+.row .fa-chevron-right{
+	color:#3498db;
+	font-size:35px;
+    display: block;
+    text-align:center; 
+}
+
+.row .column:nth-child(1) h1{
+	font-family:'Oxygen', sans-serif !important;
+	font-size:32px;
+	color:#ecf0f1;
+	text-align:center;
+	font-weight:400;
+}
+
+.row .column .column{
+	margin-top:15px;
+	background-color:transparent !important;
+	border-style:solid;
+	border-width:0px;
+	border-bottom-width:1px !important;
+    border-color:#8787d3;
+    background-color:rgb(76, 76, 187);
+    height: 10%; 
+    width: 100%;
+    position: relative;
+    top:50px
+}
+
+
+.row .column:nth-child(1) hr{
+	background-color:transparent !important;
+	color:transparent !important;
+	border-style:solid;
+    width:135px;
+	border-color:rgba(167,189,189,0.36) !important;
+}
+
+.row .column button{
+	width:35px;
+	height:35px;
+	border-top-left-radius:50px;
+	border-top-right-radius:50px;
+	border-bottom-left-radius:50px;
+	border-bottom-right-radius:50px;
+	border-style:solid;
+	border-width:0px;
+	border-color:#ecf0f1;
+	color:#6464c5;
+	font-weight:600;
+    background-color:#ffffff !important;
+    outline: none;
+}
+
+.row .column button:active{
+    color: white;
+    background-color:#6464c5 !important;
+}
+
+
+.row .column .column:hover{
+	background-color:#7575cc !important;
+}
+
+.row .column .column:active{
+	background-color:#8989e0 !important;
+}
+
+.row .column label{
+	font-family:'Oxygen', sans-serif !important;
+	color:#ecf0f1;
+	text-align:center;
+	word-spacing:5.4px;
+	position:relative;
+	left:8px;
+}
+
